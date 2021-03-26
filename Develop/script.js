@@ -16,8 +16,6 @@ generateBtn.addEventListener("click", writePassword); {
 }
 
 
-
-
 // logs user's selection of their password length
 function log(userPassLength) {
   console.log(userPassLength);
@@ -47,3 +45,24 @@ function specChar() {
   log(userSpecialChar);
 }
 specChar();
+
+
+// Random character generators
+function randomNum() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+
+function randomSpecial() {
+  var special = '!@#$%^&*(){}[]=<>/,.'
+  return special[Math.floor(Math.random() * special.length)];
+}
+
+function randomLower() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+
+function randomUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+console.log(randomSpecial());
