@@ -10,13 +10,13 @@ Visit the link [Password Generator](https://cheng21tang.github.io/Password-Gener
 
 You will have to go through the follow prompts to generate your password:
 
-  1. How long do you want your password to be? It must be between 8 - 128 characters.
-  2. Select OK if you want to include lowercase letters.
-  3. Select OK if you want to include uppercase letters.
-  4. Select OK if you want to include numbers.
-  5. Select OK if you want to include special characters.
+  1. How long do you want your password to be? It must be **between 8 - 128 characters**.
+  2. Select OK if you want to include **lowercase** letters.
+  3. Select OK if you want to include **uppercase** letters.
+  4. Select OK if you want to include **numbers**.
+  5. Select OK if you want to include **special characters**.
 
-If you do not choose a *password length between 8 and 128 characters* and select *at least one* of the types of characters you cannot generate a password.
+If you do not choose a ***password length between 8 and 128 characters*** and select ***at least one*** of the types of characters you cannot generate a password.
 
 
 ##
