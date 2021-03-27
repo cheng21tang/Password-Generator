@@ -33,6 +33,8 @@ If you do not choose a ***password length between 8 and 128 characters*** and se
     - I couldn't get Math.floor and Math.random to iterate through one of my arrays to pick characters randomly so I could assign it to a variable.
 3. **If/else**
     - Similar to functions, just following through with the logic of **If/else** statements step by step and then checking my code through **console.log()** was so important in this application.
+4. **writePassword**
+    - I was not able to get the **writePassword** function to work.
 
 
 ### Built With
