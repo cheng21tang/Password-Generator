@@ -1,41 +1,3 @@
-// function generatePassword() {
-    // Create a Prompt box to store in a var called "passwordLength" 
-    // Create a var "lowercaseArray" to store all lowercase characters (example: ["a", "b"....])
-    // Create a var "uppoercaseArray" to store all uppercase characters
-    // Create a var "numbersArray" to store all number characters
-    // Create a var "specialArray" to store all special(symbols) characters
-    // Create a var "password" to store my password (make this a empty string to start)
-    // Create a var "passwordArray" to store possible characters (make this an empty array to start)
-    // Create a var "hasLowercase" to store users input
-    // Create a var "hasUppercase" to store users input
-    // Create a var "hasNumbers" to store users input
-    // Create a var "hasSpecials" to store users input
-    // Create a var "random" to store users input
-    // Check if "passwordLength" is between 8-128
-    // If it not a valid number, alert the user it is not a valid number
-    // Else provide the next prompt
-    // Create a Confirm box with a question (click OK to confirm lowercase characters) and store it in a var "hasLowercase" (it will contain true)
-    // Create a Confirm box with a question (click OK to confirm uppercase characters) and store it in a var "hasUppercase" (it will contain true)
-    // Create a Confirm box with a question (click OK to confirm numbers characters) and store it in a var "hasNumberscase" (it will contain true)
-    // Create a Confirm box with a question (click OK to confirm special characters) and store it in a var "hasSpecialcase" (it will contain true)
-    // If all Confirm box questions are "false" then I create Alert box to alert the user ("You need to choose 1 of the whatever") (if all false go back to line 16 and start again or end (error in creating password))
-// If user selected lowercase characters, which means "hasLowercase" is "true" then concat "passwordArray" with "lowercaseArray"
-// and choose some random character from "lowercaseArray" and concat with "password" (hint: use Math.floor and Math.Random) (it will be lowercaseArray[random])
-// If user selected uppercase characters, which means "hasUppercase" is "true" then concat "passwordArray" with "uppercaseArray"
-// and choose some random character from "uppercaseArray" and concat with "password"
-// If user selected numberscase characters, which means "hasNumberscase" is "true" then concat "passwordArray" with "numbersArray"
-// and choose some random character from "numberscaseArray" and concat with "password"
-// If user selected specialcase characters, which means "hasSpecialCase" is "true" then concat "passwordArray" with "specialcaseArray"
-// and choose some random character from "specialcaseArray" and concat with "password"
-// Iterate starting from length of the "password" var to "passwordLength" (using for loop)
-// Concat "password" with random characters from "passwordArray"
-// return "password"
-// }
-
-
-
-
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -54,7 +16,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", function() {
 
-  // -------------Local variables---------------- //
+  // -------------Local Variables---------------- //
   var passwordLength = "";
   var password = "";
   var passwordArray = [];
@@ -70,18 +32,18 @@ generateBtn.addEventListener("click", function() {
 
   //Prompt user for passwordLength
   var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
-  console.log(passwordLength);
+  // console.log(passwordLength);
 
   // Ask user to include lowercase
   if (passwordLength >= 8 && passwordLength <= 128) {
     var hasLowercase = confirm("Select OK if you want to include lowercase letters.");
-    console.log(hasLowercase);
+    // console.log(hasLowercase);
 
     // Ask user to include uppercase
     if (hasLowercase === true) {
       for (var i = 0; i < passwordLength; i++) {
         var random = passwordArray[Math.floor(Math.random() * passwordArray.length)];
-        console.log(passwordArray);
+        // console.log(passwordArray);
       }
       
       var passwordArray = passwordArray.concat(lowercaseArray);
@@ -89,30 +51,30 @@ generateBtn.addEventListener("click", function() {
     }
     if (hasLowercase === true || hasLowercase === false) {
       var hasUppercase = confirm("Select OK if you want to include uppercase letters.");
-      console.log(hasUppercase);
+      // console.log(hasUppercase);
 
       // Ask user to include numbers
       if (hasUppercase === true) {
         var passwordArray = passwordArray.concat(uppercaseArray);
-        console.log(passwordArray);
+        // console.log(passwordArray);
       }
       if (hasUppercase === true || hasUppercase === false) {
         var hasNumbers = confirm("Select OK if you want to include numbers.");
-        console.log(hasNumbers);
+        // console.log(hasNumbers);
 
         // Ask user to include special characters
         if (hasNumbers === true) {
           var passwordArray = passwordArray.concat(numbersArray);
-          console.log(passwordArray);
+          // console.log(passwordArray);
         }
         if (hasNumbers === true || hasNumbers === false) {
           var hasSpecials = confirm("Select OK if you want to include special characters.");
-          console.log(hasSpecials)
+          // console.log(hasSpecials)
 
           // Check if user select no for all 4 types: lowercase, uppercase, numbers, and special characters. If so, alerting them and code ends
           if (hasSpecials === true) {
             var passwordArray = passwordArray.concat(specialArray);
-            console.log(passwordArray);
+            // console.log(passwordArray);
           }
           if (hasSpecials === true || hasSpecials === false) {
             if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecials === false) {
@@ -129,10 +91,6 @@ generateBtn.addEventListener("click", function() {
     alert("You must enter a valid number");
   }
 });
-
-
-// console.log(password);
-// console.log(lowercaseArray[random]);
 
 
 

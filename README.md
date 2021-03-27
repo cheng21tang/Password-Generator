@@ -19,6 +19,12 @@ You will have to go through the follow prompts to generate your password:
 If you do not choose a ***password length between 8 and 128 characters*** and select ***at least one*** of the types of characters you cannot generate a password.
 
 
+## Features and Highlights
+
+- Validation of the users selections are one of the highlights that was used in this code. I used **IF/ELSE** statements to check if the user had correct imputs to generate a password
+        - If the user did not have a valid input then I would warn the user through an **Alert** box.
+
+
 ## Challenges
 
 1. **Functions**
