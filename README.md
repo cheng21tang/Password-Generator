@@ -1,7 +1,7 @@
 # Password Generator
 
 Need a Password Generator? Look no more. This Password Generator will give you a randomly generated password that contains anywhere
-from 8 - 128 characters. They may include **lowercase** letters, **uppercase** letters, **numbers**, and **special characters**. All you have to do is click the **Generate Password** button and it will populate the random password for you to copy. Don't forget what you password is!
+from **8 - 128 characters**. They may include **lowercase** letters, **uppercase** letters, **numbers**, and **special characters**. All you have to do is click the **Generate Password** button, follow a few steps and it will populate the random password for you to copy. Don't forget what you password is!
 
 
 ## Getting Started
@@ -22,11 +22,11 @@ If you do not choose a ***password length between 8 and 128 characters*** and se
 ## Challenges
 
 1. **Functions**
-  - It was challenging wrapping several functions together and keeping track of what they did. I employed the use of console.log() several times to check if the code was working as expected.
+    - It was challenging wrapping several functions together and keeping track of what they did. I employed the use of console.log() several times to check if the code was working as expected.
 2. **Iterating & Math.floor(Math.random())**
-  - I couldn't get Math.floor and Math.random to iterate through one of my arrays to pick characters randomly so I could assign it to a variable.
+    - I couldn't get Math.floor and Math.random to iterate through one of my arrays to pick characters randomly so I could assign it to a variable.
 3. **If/else**
-  - Similar to functions, just following through with the logic of **If/else** statements step by step and then checking my code through **console.log()** was so important in this application.
+    - Similar to functions, just following through with the logic of **If/else** statements step by step and then checking my code through **console.log()** was so important in this application.
 
 
 ### Built With
