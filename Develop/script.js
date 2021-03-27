@@ -33,18 +33,7 @@
 // }
 
 
-var passwordLength = "";
-var password = "";
-var passwordArray = [];
-var hasLowercase = "";
-var hasUpppercase = "";
-var hasNumbers = "";
-var hasSpecials = "";
-var random = "";
-var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var specialArray = ["!", "@", "#"];
+
 
 
 // Assignment Code
@@ -60,8 +49,25 @@ function writePassword() {
 
 }
 
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", function() {
+
+  // -------------Local variables---------------- //
+  var passwordLength = "";
+  var password = "";
+  var passwordArray = [];
+  var hasLowercase = "";
+  var hasUpppercase = "";
+  var hasNumbers = "";
+  var hasSpecials = "";
+  var random = "";
+  var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  var numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var specialArray = ["!", "@", "#"];
+
   //Prompt user for passwordLength
   var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
   console.log(passwordLength);
@@ -108,6 +114,12 @@ generateBtn.addEventListener("click", function() {
           if (hasSpecials === true || hasSpecials === false) {
             if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecials === false) {
               alert("You must choose one of the follow to be included in your password: lowercase, uppercase, numbers, and/or special characters.");
+            
+            } else {
+              for (var i = 0; i < passwordLength; i++) {
+                var password = passwordArray + password;
+                console.log(password[i]);
+              }
             }
           }
         }
@@ -119,4 +131,9 @@ generateBtn.addEventListener("click", function() {
 });
 
 
-console.log(passwordArray);
+// console.log(password);
+// console.log(lowercaseArray[random]);
+
+
+
+
