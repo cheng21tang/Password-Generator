@@ -35,7 +35,7 @@
 
 var passwordLength = "";
 var password = "";
-var passwordArray = []
+var passwordArray = [];
 var hasLowercase = "";
 var hasUpppercase = "";
 var hasNumbers = "";
@@ -71,9 +71,11 @@ generateBtn.addEventListener("click", function() {
     var hasLowercase = confirm("Select OK if you want to include lowercase letters.");
     console.log(hasLowercase);
 
+//------------------stuck here--------------------
+
     // Ask user to include uppercase
     if (hasLowercase === true) {
-      var passwordArray = passwordArray + lowercaseArray;
+      var passwordArray = passwordArray.concat(lowercaseArray);
       console.log(passwordArray);
     }
     if (hasLowercase === true || hasLowercase === false) {
