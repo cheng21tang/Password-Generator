@@ -90,7 +90,7 @@ generateBtn.addEventListener("click", function() {
 
       // Ask user to include numbers
       if (hasUppercase === true) {
-        var passwordArray = passwordArray + uppercaseArray;
+        var passwordArray = passwordArray.concat(uppercaseArray);
         console.log(passwordArray);
       }
       if (hasUppercase === true || hasUppercase === false) {
@@ -99,7 +99,7 @@ generateBtn.addEventListener("click", function() {
 
         // Ask user to include special characters
         if (hasNumbers === true) {
-          var passwordArray = passwordArray + numbersArray;
+          var passwordArray = passwordArray.concat(numbersArray);
           console.log(passwordArray);
         }
         if (hasNumbers === true || hasNumbers === false) {
@@ -108,7 +108,7 @@ generateBtn.addEventListener("click", function() {
 
           // Check if user select no for all 4 types: lowercase, uppercase, numbers, and special characters. If so, alerting them and code ends
           if (hasSpecials === true) {
-            var passwordArray = passwordArray + specialArray;
+            var passwordArray = passwordArray.concat(specialArray);
             console.log(passwordArray);
           }
           if (hasSpecials === true || hasSpecials === false) {
