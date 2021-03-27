@@ -3,7 +3,7 @@
 // Create a var "lowercaseArray" to store all lowercase characters (example: ["a", "b"....])
 // Create a var "uppoercaseArray" to store all uppercase characters
 // Create a var "numbersArray" to store all number characters
-// Create a var "symbolsArray" to store all special(symbols) characters
+// Create a var "specialArray" to store all special(symbols) characters
 // Create a var "password" to store my password (make this a empty string to start)
 // Create a var "passwordArray" to store possible characters (make this an empty array to start)
 // Create a var "hasLowercase" to store users input
@@ -37,7 +37,7 @@ var passwordLength = "";
 var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var uppoercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var numbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var symbolsArray = ["!", "@", "#"];
+var specialArray = ["!", "@", "#"];
 
 
 // Assignment Code
