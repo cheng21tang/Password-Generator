@@ -67,22 +67,25 @@ generateBtn.addEventListener("click", function() {
   console.log(passwordLength);
 
   if (passwordLength >= 8 && passwordLength <= 128) {
-    var hasLowercase = confirm("Select OK if you want to include lowercase letters");
+    var hasLowercase = confirm("Select OK if you want to include lowercase letters.");
     console.log(hasLowercase);
 
     if (hasLowercase === true || hasLowercase === false) {
-      var hasUppercase = confirm("Select OK if you want to include uppercase letters");
+      var hasUppercase = confirm("Select OK if you want to include uppercase letters.");
       console.log(hasUppercase);
 
     if (hasUppercase === true || hasUppercase === false) {
-      var hasNumbers = confirm("Select OK if you want to include numbers");
+      var hasNumbers = confirm("Select OK if you want to include numbers.");
       console.log(hasNumbers);
 
         if (hasNumbers === true || hasNumbers === false) {
-          var hasSpecials = confirm("Select OK if you want to include special characters");
+          var hasSpecials = confirm("Select OK if you want to include special characters.");
           console.log(hasSpecials)
 
           if (hasSpecials === true || hasSpecials === false) {
+            if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecials === false) {
+              alert("You must choose one of the follow to be included in your password: lowercase, uppercase, numbers, and/or special characters.");
+            }
 
           }
         }
