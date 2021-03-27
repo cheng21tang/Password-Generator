@@ -62,12 +62,32 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", function() {
+  //Prompt user for passwordLength
   var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
+  console.log(passwordLength);
+
   if (passwordLength >= 8 && passwordLength <= 128) {
-    var hasLowercase = confirm("Select OK if you want to include lowercase letters") 
+    var hasLowercase = confirm("Select OK if you want to include lowercase letters");
+    console.log(hasLowercase);
+
     if (hasLowercase === true) {
-      confirm("hello")
+      var hasUppercase = confirm("Select OK if you want to include uppercase letters");
+      console.log(hasUppercase);
+
+      if (hasUppercase === true) {
+        var hasNumbers = confirm("Select OK if you want to include numbers");
+        console.log(hasNumbers);
+
+        if (hasNumbers === true) {
+          var hasSpecials = confirm("Select OK if you want to include special characters");
+          console.log(hasSpecials)
+
+          if (hasSpecials === true) {
+            console.log(hasSpecials)
+          }
+        }
+      }
     }
-    console.log(hasLowercase)
   }
 });
+
