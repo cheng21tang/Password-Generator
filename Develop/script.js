@@ -1,4 +1,4 @@
-// <--------Declaring variables-------->
+// function generatePassword() {
 // Create a Prompt box to store in a var called "passwordLength" 
 // Create a var "lowercaseArray" to store all lowercase characters (example: ["a", "b"....])
 // Create a var "uppoercaseArray" to store all uppercase characters
@@ -11,9 +11,6 @@
 // Create a var "hasNumberscase" to store users input
 // Create a var "hasSpecialcase" to store users input
 // Create a var "random" to store users input
-
-// function generatePassword() {
-// <--------Declaring variables-------->
 // Check if "passwordLength" is between 8-128
 // If it not a valid number, alert the user it is not a valid number
 // Else provide the next prompt
@@ -35,11 +32,20 @@
 // return "password"
 // }
 
+
+var passwordLength = "";
+var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var uppoercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var numbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var symbolsArray = ["!", "@", "#"];
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -48,4 +54,7 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", function() {
+  var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
+  
+});
