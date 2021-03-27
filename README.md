@@ -74,7 +74,7 @@ This project is licensed under the MIT License
 
 ### Acknowledgements
 
-* Special thanks to Mahisha Gunasekaran and Jerome Chenette for stressing the importance of pseudo code. This aided me in building this application.
+* Special thanks to **Mahisha Gunasekaran** and **Jerome Chenette** for stressing the importance of pseudo code. This aided me in building this application.
 
 
 
