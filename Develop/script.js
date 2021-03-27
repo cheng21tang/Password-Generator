@@ -64,6 +64,10 @@ function writePassword() {
 generateBtn.addEventListener("click", function() {
   var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
   if (passwordLength >= 8 && passwordLength <= 128) {
-    console.log(passwordLength);
+    var hasLowercase = confirm("Select OK if you want to include lowercase letters") 
+    if (hasLowercase === true) {
+      confirm("hello")
+    }
+    console.log(hasLowercase)
   }
 });
