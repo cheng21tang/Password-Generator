@@ -11,13 +11,13 @@
     // Create a var "hasNumbers" to store users input
     // Create a var "hasSpecials" to store users input
     // Create a var "random" to store users input
-// Check if "passwordLength" is between 8-128
-// If it not a valid number, alert the user it is not a valid number
-// Else provide the next prompt
-// Create a Confirm box with a question (click OK to confirm lowercase characters) and store it in a var "hasLowercase" (it will contain true)
-// Create a Confirm box with a question (click OK to confirm uppercase characters) and store it in a var "hasUppercase" (it will contain true)
-// Create a Confirm box with a question (click OK to confirm numbers characters) and store it in a var "hasNumberscase" (it will contain true)
-// Create a Confirm box with a question (click OK to confirm special characters) and store it in a var "hasSpecialcase" (it will contain true)
+    // Check if "passwordLength" is between 8-128
+    // If it not a valid number, alert the user it is not a valid number
+    // Else provide the next prompt
+    // Create a Confirm box with a question (click OK to confirm lowercase characters) and store it in a var "hasLowercase" (it will contain true)
+    // Create a Confirm box with a question (click OK to confirm uppercase characters) and store it in a var "hasUppercase" (it will contain true)
+    // Create a Confirm box with a question (click OK to confirm numbers characters) and store it in a var "hasNumberscase" (it will contain true)
+    // Create a Confirm box with a question (click OK to confirm special characters) and store it in a var "hasSpecialcase" (it will contain true)
 // If all Confirm box questions are "false" then I create Alert box to alert the user ("You need to choose 1 of the whatever") (if all false go back to line 16 and start again or end (error in creating password))
 // If user selected lowercase characters, which means "hasLowercase" is "true" then concat "passwordArray" with "lowercaseArray"
 // and choose some random character from "lowercaseArray" and concat with "password" (hint: use Math.floor and Math.Random) (it will be lowercaseArray[random])
@@ -70,24 +70,26 @@ generateBtn.addEventListener("click", function() {
     var hasLowercase = confirm("Select OK if you want to include lowercase letters");
     console.log(hasLowercase);
 
-    if (hasLowercase === true) {
+    if (hasLowercase === true || hasLowercase === false) {
       var hasUppercase = confirm("Select OK if you want to include uppercase letters");
       console.log(hasUppercase);
 
-      if (hasUppercase === true) {
-        var hasNumbers = confirm("Select OK if you want to include numbers");
-        console.log(hasNumbers);
+    if (hasUppercase === true || hasUppercase === false) {
+      var hasNumbers = confirm("Select OK if you want to include numbers");
+      console.log(hasNumbers);
 
-        if (hasNumbers === true) {
+        if (hasNumbers === true || hasNumbers === false) {
           var hasSpecials = confirm("Select OK if you want to include special characters");
           console.log(hasSpecials)
 
-          if (hasSpecials === true) {
-            console.log(hasSpecials)
+          if (hasSpecials === true || hasSpecials === false) {
+
           }
         }
       }
     }
+  } else {
+    alert("You must enter a valid number");
   }
 });
 
