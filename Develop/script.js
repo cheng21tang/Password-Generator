@@ -18,7 +18,7 @@
     // Create a Confirm box with a question (click OK to confirm uppercase characters) and store it in a var "hasUppercase" (it will contain true)
     // Create a Confirm box with a question (click OK to confirm numbers characters) and store it in a var "hasNumberscase" (it will contain true)
     // Create a Confirm box with a question (click OK to confirm special characters) and store it in a var "hasSpecialcase" (it will contain true)
-// If all Confirm box questions are "false" then I create Alert box to alert the user ("You need to choose 1 of the whatever") (if all false go back to line 16 and start again or end (error in creating password))
+    // If all Confirm box questions are "false" then I create Alert box to alert the user ("You need to choose 1 of the whatever") (if all false go back to line 16 and start again or end (error in creating password))
 // If user selected lowercase characters, which means "hasLowercase" is "true" then concat "passwordArray" with "lowercaseArray"
 // and choose some random character from "lowercaseArray" and concat with "password" (hint: use Math.floor and Math.Random) (it will be lowercaseArray[random])
 // If user selected uppercase characters, which means "hasUppercase" is "true" then concat "passwordArray" with "uppercaseArray"
@@ -35,15 +35,15 @@
 
 var passwordLength = "";
 var password = "";
-var passwordArray = "";
+var passwordArray = []
 var hasLowercase = "";
 var hasUpppercase = "";
 var hasNumbers = "";
 var hasSpecials = "";
 var random = "";
 var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var uppoercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var numbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialArray = ["!", "@", "#"];
 
 
@@ -66,27 +66,47 @@ generateBtn.addEventListener("click", function() {
   var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
   console.log(passwordLength);
 
+  // Ask user to include lowercase
   if (passwordLength >= 8 && passwordLength <= 128) {
     var hasLowercase = confirm("Select OK if you want to include lowercase letters.");
     console.log(hasLowercase);
 
+    // Ask user to include uppercase
+    if (hasLowercase === true) {
+      var passwordArray = passwordArray + lowercaseArray;
+      console.log(passwordArray);
+    }
     if (hasLowercase === true || hasLowercase === false) {
       var hasUppercase = confirm("Select OK if you want to include uppercase letters.");
       console.log(hasUppercase);
 
-    if (hasUppercase === true || hasUppercase === false) {
-      var hasNumbers = confirm("Select OK if you want to include numbers.");
-      console.log(hasNumbers);
+      // Ask user to include numbers
+      if (hasUppercase === true) {
+        var passwordArray = passwordArray + uppercaseArray;
+        console.log(passwordArray);
+      }
+      if (hasUppercase === true || hasUppercase === false) {
+        var hasNumbers = confirm("Select OK if you want to include numbers.");
+        console.log(hasNumbers);
 
+        // Ask user to include special characters
+        if (hasNumbers === true) {
+          var passwordArray = passwordArray + numbersArray;
+          console.log(passwordArray);
+        }
         if (hasNumbers === true || hasNumbers === false) {
           var hasSpecials = confirm("Select OK if you want to include special characters.");
           console.log(hasSpecials)
 
+          // Check if user select no for all 4 types: lowercase, uppercase, numbers, and special characters. If so, alerting them and code ends
+          if (hasSpecials === true) {
+            var passwordArray = passwordArray + specialArray;
+            console.log(passwordArray);
+          }
           if (hasSpecials === true || hasSpecials === false) {
             if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecials === false) {
               alert("You must choose one of the follow to be included in your password: lowercase, uppercase, numbers, and/or special characters.");
             }
-
           }
         }
       }
@@ -96,3 +116,5 @@ generateBtn.addEventListener("click", function() {
   }
 });
 
+
+console.log(passwordArray);
