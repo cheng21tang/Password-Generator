@@ -116,8 +116,9 @@ generateBtn.addEventListener("click", function() {
               alert("You must choose one of the follow to be included in your password: lowercase, uppercase, numbers, and/or special characters.");
             
             } else {
+
               for (var i = 0; i < passwordLength; i++) {
-                var password = passwordArray + password;
+                var password = passwordArray.concat(password);
                 console.log(password[i]);
               }
             }
