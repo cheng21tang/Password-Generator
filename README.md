@@ -69,6 +69,9 @@ This project is licensed under the MIT License
 * Special thanks to Mahisha Gunasekaran and Jerome Chenette for stressing the importance of pseudo code. This aided me in building this application.
 
 
+
+__________________________________________________________________________________
+
 ###### Pseudo Code
 
 Here is my pseudo code I put together with the help of **Mahisha Gunasekaran**.
