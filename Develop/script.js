@@ -6,11 +6,11 @@
     // Create a var "specialArray" to store all special(symbols) characters
     // Create a var "password" to store my password (make this a empty string to start)
     // Create a var "passwordArray" to store possible characters (make this an empty array to start)
-// Create a var "hasLowercase" to store users input
-// Create a var "hasUppercase" to store users input
-// Create a var "hasNumbers" to store users input
-// Create a var "hasSpecials" to store users input
-// Create a var "random" to store users input
+    // Create a var "hasLowercase" to store users input
+    // Create a var "hasUppercase" to store users input
+    // Create a var "hasNumbers" to store users input
+    // Create a var "hasSpecials" to store users input
+    // Create a var "random" to store users input
 // Check if "passwordLength" is between 8-128
 // If it not a valid number, alert the user it is not a valid number
 // Else provide the next prompt
@@ -63,5 +63,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", function() {
   var passwordLength = prompt("How long do you want your password to be?\nIt must be between 8 - 128 characters.", );
-  
+  if (passwordLength >= 8 && passwordLength <= 128) {
+    console.log(passwordLength);
+  }
 });
