@@ -77,12 +77,15 @@ generateBtn.addEventListener("click", function() {
     var hasLowercase = confirm("Select OK if you want to include lowercase letters.");
     console.log(hasLowercase);
 
-//------------------stuck here--------------------
-
     // Ask user to include uppercase
     if (hasLowercase === true) {
+      for (var i = 0; i < passwordLength; i++) {
+        var random = passwordArray[Math.floor(Math.random() * passwordArray.length)];
+        console.log(passwordArray);
+      }
+      
       var passwordArray = passwordArray.concat(lowercaseArray);
-      console.log(passwordArray);
+
     }
     if (hasLowercase === true || hasLowercase === false) {
       var hasUppercase = confirm("Select OK if you want to include uppercase letters.");
@@ -116,11 +119,7 @@ generateBtn.addEventListener("click", function() {
               alert("You must choose one of the follow to be included in your password: lowercase, uppercase, numbers, and/or special characters.");
             
             } else {
-
-              for (var i = 0; i < passwordLength; i++) {
-                var password = passwordArray.concat(password);
-                console.log(password[i]);
-              }
+              
             }
           }
         }
