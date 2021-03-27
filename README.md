@@ -38,12 +38,12 @@ If you do not choose a ***password length between 8 and 128 characters*** and se
 
 ### References
 
-* [w3schools](https://www.w3schools.com/js/js_functions.asp)
-* [w3schools](https://www.w3schools.com/js/js_if_else.asp)
-* [mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
-* [w3schools](https://www.w3schools.com/jsref/met_win_alert.asp)
-* [w3schools](https://www.w3schools.com/js/js_variables.asp)
-* [w3schools](https://www.w3schools.com/Jsref/jsref_concat_array.asp)
+* [w3schools_Functions](https://www.w3schools.com/js/js_functions.asp)
+* [w3schools_If_Else](https://www.w3schools.com/js/js_if_else.asp)
+* [mozilla_Loops_Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+* [w3schools_Window_Alert](https://www.w3schools.com/jsref/met_win_alert.asp)
+* [w3schools_Variables](https://www.w3schools.com/js/js_variables.asp)
+* [w3schools_ArrayConcat](https://www.w3schools.com/Jsref/jsref_concat_array.asp)
 
 ### Deployed Link
 
